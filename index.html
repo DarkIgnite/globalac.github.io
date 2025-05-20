@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Global AC adalah jasa Service & perawatan AC terpercaya di Banjarbaru dengan teknisi profesional dan bergaransi.">
+  <title>Global AC - Service AC BanjarBaru</title>
+
+  <!-- Font & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-menu');
+      const hamburger = document.getElementById('hamburger');
+      navList.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    }
+  </script>
+  <script>
+  let lastScrollTop = 0;
+  const nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+      // scroll ke bawah & sudah melewati 50px → sembunyikan navbar
+      nav.classList.add('nav-hidden');
+    } else {
+      // scroll ke atas → tampilkan navbar
+      nav.classList.remove('nav-hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // reset di top
+  }, false);
+</script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="brand">
+    <a href="#home">
+      <img src="image/logo.png" alt="Global AC Logo" class="logo-navbar" />
+    </a>
+  </div>
+  <!-- sisanya tetap sama -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="#home" onclick="toggleMenu()">Global AC</a></li>
+    <li><a href="#tentang" onclick="toggleMenu()">Tentang Kami</a></li>
+    <li><a href="#galeri" onclick="toggleMenu()">Galeri</a></li>
+    <li><a href="#kontak" onclick="toggleMenu()">Kontak</a></li>
+  </ul>
+</nav>
+
+
+<!-- Hero / Home Section -->
+<section id="home" class="hero-header">
+  <div class="header-overlay">
+    <h1>Service & Perawatan AC Banjarbaru</h1>
+    <p>Bergaransi dan Profesional sejak 2012</p>
+  </div>
+</section>
+
+
+<!-- Kenapa Pilih Kami -->
+<section class="section" id="layanan">
+  <h3 data-aos="fade-up">Kenapa Pilih Global AC?</h3>
+  <div class="features">
+    <div class="feature" data-aos="fade-right" data-aos-delay="100">
+      <h4>Teknisi Profesional</h4>
+      <p>Kami hanya kirim teknisi bersertifikat dan berpengalaman.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+      <h4>Harga Terjangkau</h4>
+      <p>Biaya transparan, tanpa biaya tersembunyi. Cocok untuk semua kalangan.</p>
+    </div>
+    <div class="feature" data-aos="fade-left" data-aos-delay="300">
+      <h4>Bergaransi</h4>
+      <p>Setiap Service AC kami dijamin dengan garansi pengerjaan resmi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section Foto + Deskripsi Sejajar -->
+<section class="section about-photos">
+  <div class="about-container">
+    <div class="about-photo-text" data-aos="fade-right">
+      <img src="image/armada-global-ac-1-1024x553.jpg" alt="Armada Global AC" />
+      <h3>Global AC adalah penyedia layanan Air conditioning terbaik di Kalimantan Selatan</h3>
+      <p>Yang di dukung dengan armada yang memadai sehingga memungkinkan layanan yang cepat kepada costumer.</p>
+    </div>
+    <div class="about-photo-text" data-aos="fade-left">
+      <img src="image/teknisi.png" alt="Tim Profesional" />
+      <h3>Mempunyai tim yang professional</h3>
+      <p>Dengan dukungan peralatan lengkap dan terkini</p>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section id="tentang" class="section hero-tentang">
+  <h1 class="big-gradient-text" data-aos="fade-up">Tentang Global AC</h1>
+  <p data-aos="fade-up" data-aos-delay="100" style="max-width: 700px; margin: 1rem auto 3rem auto;">
+    Kenyamanan udara Anda, prioritas utama kami. Kami berkomitmen memberikan layanan terbaik dengan armada dan tim profesional yang handal.
+  </p>
+
+  <!-- 4 Foto Vertikal + Judul -->
+  <div class="foto-grid" data-aos="fade-up" data-aos-delay="200">
+    <div class="foto-item">
+      <img src="image/terlatih.jpeg" alt="Handal" />
+      <h4>HANDAL</h4>
+    </div>
+    <div class="foto-item">
+      <img src="image/professional.jpeg" alt="Professional" />
+      <h4>PROFESSIONAL</h4>
+    </div>
+    <div class="foto-item">
+      <img src="image/handal.jpg" alt="Terlatih" />
+      <h4>TERLATIH</h4>
+    </div>
+    <div class="foto-item">
+      <img src="image/terpercaya.jpg" alt="Terpercaya" />
+      <h4>TERPERCAYA</h4>
+    </div>
+  </div>
+
+  <!-- 4 Foto Vertikal + Judul Layanan -->
+   <div class="layanan-header" data-aos="fade-up" data-aos-delay="250" style="max-width:700px; margin: 2rem auto 1.5rem auto; text-align:center;">
+  <h2 class="gradient-text">Layanan</h2>
+  <p>Kami menyediakan berbagai layanan terbaik untuk kebutuhan AC Anda, mulai dari service rutin hingga pengadaan unit baru.</p>
+</div>
+  <div class="layanan-grid" data-aos="fade-up" data-aos-delay="300" style="margin-top: 4rem;">
+    <div class="layanan-item">
+      <img src="image/service berkala.jpeg" alt="Service Berkala" />
+      <h5>Service berkala</h5>
+    </div>
+    <div class="layanan-item">
+      <img src="image/pemasangan.jpeg" alt="Pemasangan" />
+      <h5>Pemasangan</h5>
+    </div>
+    <div class="layanan-item">
+      <img src="image/perbaikan.jpeg" alt="Perbaikan" />
+      <h5>Perbaikan</h5>
+    </div>
+    <div class="layanan-item">
+      <img src="image/unit.jpg" alt="Pengadaan unit ac baru" />
+      <h5>Pengadaan unit ac baru</h5>
+    </div>
+  </div>
+</section>
+
+
+<section class="section testimonial-leader">
+  <div class="testimonial-quote-container">
+    <img src="image/head-global-ac2-modified.png" alt="Pimpinan" class="leader-photo">
+    <blockquote>
+      <p>“Kami berkomitmen penuh memberikan layanan terbaik bagi konsumen, dan terus meningkatkan kualitas layanan tersebut dari waktu ke waktu.”</p>
+    </blockquote>
+    <p class="leader-name">– Head of Global AC</p>
+  </div>
+</section>
+
+<section class="section video-section">
+  <h2 class="gradient-text" style="text-align:center;">Company Profile</h2>
+  <div class="video-container">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/ERxcC13gwaU" 
+    title="Company Profile Global AC" frameborder="0" allowfullscreen loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="section">
+  <h2 data-aos="fade-up" style="text-align:center; margin-bottom: 1.5rem;">Galeri Hasil Pekerjaan Kami</h2>
+  <p data-aos="fade-up" data-aos-delay="100" style="text-align:center; max-width: 700px; margin: 0 auto 3rem auto;">
+    Berikut adalah beberapa dokumentasi Service AC yang pernah kami kerjakan:
+  </p>
+  <div class="galeri-grid" data-aos="fade-up" data-aos-delay="200">
+    <div class="galeri-item"><img src="galeri/foto1.jpeg" alt="Pekerjaan 1" /></div>
+    <div class="galeri-item"><img src="galeri/foto2.jpeg" alt="Pekerjaan 2" /></div>
+    <div class="galeri-item"><img src="galeri/foto3.jpeg" alt="Pekerjaan 3" /></div>
+    <div class="galeri-item"><img src="galeri/foto4.jpeg" alt="Pekerjaan 4" /></div>
+
+    <div class="galeri-item"><img src="galeri/foto5.jpeg" alt="Pekerjaan 5" /></div>
+    <div class="galeri-item"><img src="galeri/foto6.jpeg" alt="Pekerjaan 6" /></div>
+    <div class="galeri-item"><img src="galeri/foto7.jpeg" alt="Pekerjaan 7" /></div>
+    <div class="galeri-item"><img src="galeri/foto8.jpeg" alt="Pekerjaan 8" /></div>
+  </div>
+</section>
+
+
+<!-- Kontak -->
+<section id="kontak" class="section kontak-section" data-aos="fade-up">
+  <h2 style="text-align:center; margin-bottom: 2rem;" class="gradient-text">Kontak Kami</h2>
+  <div class="kontak-container">
+    <div class="kontak-info">
+      <div class="kontak-card">
+        <i class="fab fa-whatsapp kontak-icon"></i>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/6281349778691" target="_blank">+62 813-4977-8691</a></p>
+      </div>
+      <div class="kontak-card">
+        <i class="fas fa-phone kontak-icon"></i>
+        <h3>Telepon</h3>
+        <p><a href="tel:+6281349778691">+62 813-4977-8691</a></p>
+      </div>
+      <div class="kontak-cta-buttons">
+        <a href="https://wa.me/6281349778691" target="_blank" class="button dark">Chat via WhatsApp</a>
+        <a href="tel:+6281349778691" class="button light">Telepon Kami</a>
+      </div>
+    </div>
+    <div class="kontak-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.547328765877!2d114.80089699999999!3d-3.4595838999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de683e5faff9387%3A0xc2607de3e4ab1f8f!2sService%20AC%20Banjarbaru%20(GLOBAL%20AC)!5e0!3m2!1sen!2sid!4v1747640670230!5m2!1sen!2sid" 
+        width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Testimoni -->
+<section class="testimonials-modern" id="testimoni">
+  <div class="testimoni-left" data-aos="fade-up">
+    <span class="label">Testimoni</span>
+    <h2><span class="black">Reel</span> <span class="gradient-text">Ulasan User</span></h2>
+    <p>Ulasan Positif dan mendukung ini diambil dari pelanggan Global AC melalui WhatsApp & Google Bisnis.</p>
+    <div class="review-stats">
+      <div class="stat">
+        <img src="icons/customer.png" alt="Data pelanggan">
+        <h3>5000+</h3>
+        <p>Pelanggan Global AC</p>
+      </div>
+      <div class="stat">
+        <img src="icons/star-icon.svg" alt="Rating">
+        <h3>4.5/5</h3>
+        <p>Review Google Maps</p>
+      </div>
+    </div>
+    <div class="cta-buttons">
+      <a href="https://wa.me/6281349778691" class="button dark" target="_blank">Whatsapp Kami</a>
+      <a href="tel:+6281349778691" class="button light">Telepon Kami</a>
+    </div>
+  </div>
+
+  <div class="testimoni-right" data-aos="fade-left">
+    <div class="testi-box">
+      <p>"Mantab nih, kada manjarai nukar ac dsni. Plynn juara"</p>
+      <strong>– aau kalsel / Banjarbaru</strong>
+    </div>
+    <div class="testi-box">
+      <p>"Service AC nya bagus, memuaskan. para pekerja yg datang sopan dan profesional."</p>
+      <strong>– Muhammad Rayhan / Landasan Ulin</strong>
+    </div>
+    <div class="testi-box">
+      <p>"Respon cepat, pengerjaan jg cepat dan tepat, hasilnya memuaskan,bergaransi pula"</p>
+      <strong>– Setiadi Permadi / Sungai Ulin</strong>
+    </div>
+  </div>
+</section>
+
+<!-- Section untuk Merek AC -->
+<section class="section" style="background-color: #ffffff;">
+  <h3 style="text-align: center; color: #0077b6;">Kami Melayani Berbagai Merek AC</h3>
+  <p style="text-align: center; margin-bottom: 2rem;">Kami menerima Service, pemasangan, dan perawatan untuk berbagai merek AC ternama:</p>
+  <div class="brand-logos">
+    <img src="image/lg-logo-partnership-with-bang-olufsen-yields-top-class-1.png" alt="LG" />
+    <img src="image/midea.png" alt="Midea" />
+    <img src="image/sharp-logo-png-transparent.png" alt="Sharp" />
+    <img src="image/daikin.png" alt="Daikin" />
+    <img src="image/Panasonic-Logo.wine.svg" alt="Panasonic" />
+    <img src="image/Logo-Changhong.svg" alt="Changhong" />
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-sosial">
+  <h3>Sosial Media</h3>
+  <p>Ikuti kami di media sosial untuk update terbaru!</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/ServiceAcBanjarbaru/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/global_ac/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@globalac.banjarbaru" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</footer>
+
+<!-- Sticky WhatsApp -->
+<a href="https://wa.me/6281349778691" class="whatsapp-sticky" target="_blank" aria-label="Chat WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon">
+</a>
+
+<!-- Script AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+</body>
+</html>
